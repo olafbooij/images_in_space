@@ -67,7 +67,7 @@ def project_point(homography, point):
 
 transed = [project_point(homography, point) for point in points]
 
-# And finaly use some matplotlib to show the results:
+# And finally use some matplotlib to show the results:
 plt.imshow(img_out)
 x_coordinate, y_coordinate = zip(*transed)
 plt.plot(x_coordinate, y_coordinate)
